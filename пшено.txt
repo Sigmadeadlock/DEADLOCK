@@ -1,0 +1,537 @@
+bibk@Sigma MINGW64 ~
+$ ^[[200~ssh-keygen -t ed25519 -C "abibkavicabobka@gmail.com"~
+bash: $'\E[200~ssh-keygen': command not found
+
+abibk@Sigma MINGW64 ~
+$ ssh-keygen -t ed25519 -C "abibkavicabobka@gmail.com"
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/c/Users/abibk/.ssh/id_ed25519):
+Created directory '/c/Users/abibk/.ssh'.
+Enter passphrase for "/c/Users/abibk/.ssh/id_ed25519" (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/abibk/.ssh/id_ed25519
+Your public key has been saved in /c/Users/abibk/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:UzrMVdeFzNAHh+rTvO21sAacTiQ8TrqBBYYyA/DXCKk abibkavicabobka@gmail.com
+The key's randomart image is:
++--[ED25519 256]--+
+|= ...       o=o=+|
+| =.o =     . .*.o|
+| .= + o . o  . . |
+|E  .   + O ..    |
+|      o S =..o   |
+|     . o + =o o  |
+|        o o .o o.|
+|       .   . .+ +|
+|            .. o.|
++----[SHA256]-----+
+
+abibk@Sigma MINGW64 ~
+$ ssh-add ~/.ssh/id_ed25519
+Could not open a connection to your authentication agent.
+
+abibk@Sigma MINGW64 ~
+$ eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+Agent pid 1350
+Enter passphrase for /c/Users/abibk/.ssh/id_ed25519:
+Bad passphrase, try again for /c/Users/abibk/.ssh/id_ed25519:
+Bad passphrase, try again for /c/Users/abibk/.ssh/id_ed25519:
+Bad passphrase, try again for /c/Users/abibk/.ssh/id_ed25519:
+Identity added: /c/Users/abibk/.ssh/id_ed25519 (abibkavicabobka@gmail.com)
+
+abibk@Sigma MINGW64 ~
+$ ls
+ AMDRM_Install.log
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ DEADLOCK/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{b5c18290-e637-11f0-86c9-8efeab606be5}.TM.blf
+ NTUSER.DAT{b5c18290-e637-11f0-86c9-8efeab606be5}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{b5c18290-e637-11f0-86c9-8efeab606be5}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+'WPS Cloud Files'/
+ ansel/
+ ibisPaint/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ setup.dat
+ uTorrentClients.dat
+
+abibk@Sigma MINGW64 ~
+$ cd OneDrive/
+.849C9593-D756-4E56-8D6E-42412F2A707B  Документы/
+Desktop/                               Изображения/
+Вложения/
+
+abibk@Sigma MINGW64 ~
+$ cd OneDrive/
+.849C9593-D756-4E56-8D6E-42412F2A707B  Документы/
+Desktop/                               Изображения/
+Вложения/
+
+abibk@Sigma MINGW64 ~
+$ cd OneDrive/Документы/
+KingsoftData/                    photo_5303082810451105015_w.jpg
+TI/                              photo_5303082810451105016_w.jpg
+desktop.ini                      photo_5303082810451105017_w.jpg
+git/                             photo_5303082810451105018_w.jpg
+photo_5303082810451105000_w.jpg  photo_5303082810451105019_w.jpg
+photo_5303082810451105001_w.jpg  photo_5303082810451105020_w.jpg
+photo_5303082810451105002_w.jpg  photo_5303082810451105021_w.jpg
+photo_5303082810451105003_w.jpg  photo_5303082810451105022_w.jpg
+photo_5303082810451105004_w.jpg  photo_5303082810451105023_w.jpg
+photo_5303082810451105006_w.jpg  photo_5303082810451105025_w.jpg
+photo_5303082810451105009_w.jpg  photo_5303082810451105026_w.jpg
+photo_5303082810451105010_w.jpg  photo_5303082810451105027_w.jpg
+photo_5303082810451105011_w.jpg  photo_5303082810451105028_w.jpg
+photo_5303082810451105012_w.jpg  photo_5336765588958811524_w.jpg
+photo_5303082810451105013_w.jpg  photo_5336765588958811526_w.jpg
+photo_5303082810451105014_w.jpg  дедлок/
+
+abibk@Sigma MINGW64 ~
+$ cd OneDrive/Документы/git
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ ls
+login.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ ^[[200~git remote -v~
+bash: $'\E[200~git': command not found
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ git remote -v
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ git commit -m "Добавил login.html"
+[feature/login (root-commit) 9b3d65d] Добавил login.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 login.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ git checkout main
+error: pathspec 'main' did not match any file(s) known to git
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ git branch main
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (feature/login)
+$ git checkout main
+Switched to branch 'main'
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git branch feature/register
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ touch
+touch: missing file operand
+Try 'touch --help' for more information.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ touch register.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git add  register.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git commit -m "Добавил register.html"
+[main 001939c] Добавил register.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 register.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git checkout main
+Already on 'main'
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$   git merge feature/register
+Already up to date.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ ^[[200~ git tag v1.0
+bash: $'\E[200~': command not found
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git tag v1.0
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git tag
+v1.0
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ touch xuy123
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git checkout HEAD xuy123
+error: pathspec 'xuy123' did not match any file(s) known to git
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git add xuy123
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git checkout HEAD xuy123
+error: pathspec 'xuy123' did not match any file(s) known to git
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git commit -m "xuy123"
+[main ff73146] xuy123
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 xuy123
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git checkout HEAD xuy123
+Updated 0 paths from da24cec
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git reset
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ ^[[200~  git remote add origin <URL>
+bash: syntax error near unexpected token `newline'
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$      git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git remote add origin ^[[200~
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git remote add origin
+usage: git remote add [<options>] <name> <url>
+
+    -f, --[no-]fetch      fetch the remote branches
+    --[no-]tags           import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --[no-]track <branch>
+                          branch(es) to track
+    -m, --[no-]master <branch>
+                          master branch
+    --[no-]mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git remote add origin git@github.com:Sigmadeadlock/DEADLOCK.git
+error: remote origin already exists.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$   git push -u origin main
+fatal: '?[200~' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$   git push -u origin main
+fatal: '?[200~' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 12.65 KiB | 193.00 KiB/s, done.
+From github.com:Sigmadeadlock/DEADLOCK
+ * branch            main       -> FETCH_HEAD
+ * [new branch]      main       -> origin/main
+Merge made by the 'ort' strategy.
+ LICENSE | 674 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 674 insertions(+)
+ create mode 100644 LICENSE
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push -u origin main --force
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (9/9), 870 bytes | 870.00 KiB/s, done.
+Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[detached HEAD bd21477] объединил 4 команды
+ Date: Wed Apr 8 07:00:43 2026 +0300
+ 2 files changed, 674 insertions(+)
+ create mode 100644 LICENSE
+ create mode 100644 register.html
+Successfully rebased and updated refs/heads/main.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git log
+commit bd21477d1bc49b60b5ad4954f30b2fae1d5f5aa6 (HEAD -> main)
+Author: Sigmadeadlock <abibkavicabobka@gmail.com>
+Date:   Wed Apr 8 07:00:43 2026 +0300
+
+    объединил 4 команды
+
+commit 9b3d65d06a534e7a1ff574eafd3446195181d2aa (feature/register, feature/login)
+Author: Sigmadeadlock <abibkavicabobka@gmail.com>
+Date:   Wed Apr 8 06:55:01 2026 +0300
+
+    Добавил login.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push
+To github.com:Sigmadeadlock/DEADLOCK.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:Sigmadeadlock/DEADLOCK.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push --force
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 12.15 KiB | 2.43 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Sigmadeadlock/DEADLOCK.git
+ + dee1dc6...bd21477 main -> main (forced update)
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ touch .gitignore
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ nano .gitignore
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git add .gitignore
+warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git commit -m "добавил .gitignore"
+[main 6b2fd81] добавил .gitignore
+ 1 file changed, 3 insertions(+)
+ create mode 100644 .gitignore
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 376 bytes | 376.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Sigmadeadlock/DEADLOCK.git
+   bd21477..6b2fd81  main -> main
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git stash
+No local changes to save
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ touch 123
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git stash
+No local changes to save
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git submodule add https://github.com/ish3nn/dots.git
+Cloning into 'C:/Users/abibk/OneDrive/Документы/git/dots'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (65/65), done.
+remote: Total 70 (delta 20), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (70/70), 19.47 MiB | 9.87 MiB/s, done.
+Resolving deltas: 100% (20/20), done.
+warning: in the working copy of '.gitmodules', LF will be replaced by CRLF the next time Git touches it
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ ls
+123  LICENSE  dots/  login.html  register.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ rm -rf dots
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git submodule add https://github.com/ish3nn/dots.git
+fatal: 'dots' already exists in the index
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git rm dots
+rm 'dots'
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git submodule add https://github.com/ish3nn/dots.git
+fatal: A git directory for 'dots' is found locally with remote(s):
+  origin        https://github.com/ish3nn/dots.git
+If you want to reuse this local git directory instead of cloning again from
+  https://github.com/ish3nn/dots.git
+use the '--force' option. If the local git directory is not the correct repo
+or you are unsure what this means choose another name with the '--name' option.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git rm dots
+fatal: pathspec 'dots' did not match any files
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git submodule add https://github.com/ish3nn/dots.git  git-submodules
+Cloning into 'C:/Users/abibk/OneDrive/Документы/git/git-submodules'...
+remote: Enumerating objects: 70, done.
+remote: Counting objects: 100% (70/70), done.
+remote: Compressing objects: 100% (65/65), done.
+remote: Total 70 (delta 20), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (70/70), 19.47 MiB | 16.53 MiB/s, done.
+Resolving deltas: 100% (20/20), done.
+warning: in the working copy of '.gitmodules', LF will be replaced by CRLF the next time Git touches it
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ ls
+123  LICENSE  git-submodules/  login.html  register.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git submodule update --init
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$  git config --global alias.lg "log --oneline --graph --all"
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git log --oneline --graph
+* 6b2fd81 (HEAD -> main, origin/main) добавил .gitignore
+* bd21477 объединил 4 команды
+* 9b3d65d (feature/register, feature/login) Добавил login.html
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git reset --soft HEAD~1
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push
+To github.com:Sigmadeadlock/DEADLOCK.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'github.com:Sigmadeadlock/DEADLOCK.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ --force
+bash: --force: command not found
+
+abibk@Sigma MINGW64 ~/OneDrive/Документы/git (main)
+$ git push --force
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:Sigmadeadlock/DEADLOCK.git
+ + 6b2fd81...bd21477 main -> main (forced update)
